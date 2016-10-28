@@ -3,7 +3,7 @@
 
   "name": "Qgle",
   "description": "This extension allow suser to highlight text and use ctrl+q to Google it.",
-  "version": "1.0",
+  "version": "0.0.0.1",
 
   "content_scripts": [
     {
