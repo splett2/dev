@@ -13,7 +13,7 @@ var kc = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
 (function () {
     document.addEventListener('keyup', function (e) {
-        if (e.ctrlKey && e.keyCode == 81) {
+        if (e.ctrlKey && e.keyCode == 81 && ! e.altKey) {
             var t = (window.getSelection) ? window.getSelection().toString() : document.selection.createRange().text;
             window.open(encodeURI('https://www.google.com/search?&q=' + t), '_blank');
         } else if (kc.length > chain.length) {
